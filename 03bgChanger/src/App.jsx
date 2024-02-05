@@ -1,17 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
 
 function App() {
   const [color, setColor] = useState('olive')
 
   return (
     <>
-    <div className="w-screen h-screen duration-200" style={{backgroundColor:color}}>
+    <div className="w-screen h-screen duration-200" style={{backgroundColor:color, textAlign:'center'}}>
       <h1 className='text-white border-lg-black' style={{fontSize:'60px', fontFamily:'Cursive',padding:'100px 0px 40px 0px',textShadow:'0 0 3px #412000, 0 0 5px #412000'}}>Hey there!</h1>
       <h2 className='text-white' style={{border:'2px',fontSize:'40px', fontFamily:'Lucida control',textShadow:'0 0 3px #412000, 0 0 5px #412000'}}>Color is a power which directly influences the soul. Hit the color you admire..</h2>
-      <div className="fixed flex flex-wrap justify-center bottom-12 insert-x-0 px-5">
+      <div className="fixed flex flex-wrap justify-center bottom-12 insert-x-0" style={{padding:'0 145px 0 145px'}}>
         <div className="flex flex-wrap justify-center gap-4 shadow-lg bg-white px-3 py-2 rounded-xl">
           <button onClick={()=> setColor("blue")} className="px-4 bg-blue-600 rounded-lg text-white shadow-lg"> Blue </button>
           <button onClick={()=> setColor("purple")} className='bg-purple-600 text-white px-4 rounded-lg shadow-lg'> Purple </button>
